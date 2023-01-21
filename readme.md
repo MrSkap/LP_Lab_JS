@@ -25,10 +25,12 @@ ng serve
     Возвращает:
         file: выбранный файл
 
+Удалить файл:
 GET http://localhost:3000/api/delete?file=${file}
     Параметры:
         message - сообщение об успешном завершении
 
+Отрыть папку:
 POST http://localhost:3000/api/open?file=${file}
     Параметры:
         file - название файла
