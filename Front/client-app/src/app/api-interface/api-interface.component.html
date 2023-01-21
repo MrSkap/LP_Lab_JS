@@ -1,0 +1,10 @@
+<p>api-interface works!</p>
+<div>{{currentPath}}</div>
+<div ng-app="myApp">
+    <input #fileName type="text"/>
+    <button type="button" (click)="GoBack()">Назад</button>
+    <button type="button" (click)="Update()">Обновить</button>
+    <button type="button" (click)="Open(fileName.value)">Открыть</button>
+    <button type="button" (click)="Download(fileName.value)">Скачать</button>
+    <button type="button" (click)="Delete(fileName.value)">Удалить</button>
+</div>
